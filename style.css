@@ -200,13 +200,14 @@ main :not(nav.big-links) > ul {
   li {
     margin: 0.25em auto;
     &::before {
-      content: '\2665';
-      padding-top: 0.25em;
+      content: 'favorite';
+      padding-top: 0.5em;
       left: 0.25em;
-      font-size: 66%;
+      font-size: 0.5em;
       position: absolute;
       color: #FC5D9D;
       padding-right: 0.5em;
+      font-family: "Material Icons Outlined";
     }
   }
 }
@@ -231,6 +232,9 @@ main {
   .center {
     text-align: center;
   }
+  .material-icons, .material-icons-outlined {
+    font-size: 0.75em;
+  }
 }
 main > header {
   border-bottom: 0.125em solid #FC5D9D;
@@ -246,6 +250,9 @@ main > footer {
   border-top: 2px solid white;
   margin-top: 2em;
   font-size: 75%;
+  .twice-footer .material-icons-outlined {
+    display: inline;
+  }
 }
 main > nav.page-path {
   font-size: 75%;
