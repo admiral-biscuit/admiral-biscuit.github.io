@@ -92,6 +92,7 @@ body {
     right: 0;
     top: auto;
     margin: 0.5em;
+    z-index: 69;
     ul {
       li {
         display: inline;
@@ -353,6 +354,9 @@ address {
         width: 1.5em;
         text-align: center;
         color: #FC5D9D;
+      }
+      .material-icons, .material-icons-outlined {
+        font-size: 1em;
       }
     }
   }
