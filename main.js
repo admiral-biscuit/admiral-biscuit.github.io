@@ -43,11 +43,11 @@ addEventListener("DOMContentLoaded", (e) => {
 /* utils.js */
 
 function mailToLink(str, showIcon) {
-  let icon = "";
-  if (showIcon) {
-    icon = "<span class=\"material-icons\">mail</span>";
+  let classString = "mail-link";
+  if (!showIcon) {
+    classString += " no-icon";
   }
-  return "<a class=\"mail-link\" href=\"mailto:" + str + "\">" + icon + str + "</a>";
+  return `<a class=\"${classString}\" href=\"mailto:${str}\">${str}</a>`;
 }
 
 function reverseString(str) {
