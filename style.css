@@ -214,6 +214,10 @@ a {
       text-decoration: none;
     }
   }
+  .material-icons {
+    font-size: 0.75em;
+    padding-right: 0.25em;
+  }
 }
 main :not(nav.big-links) > ul {
   list-style-type: none;
