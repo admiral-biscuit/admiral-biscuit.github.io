@@ -176,6 +176,17 @@ body {
     }
   }
 }
+main div.heading-with-short-description {
+  border-radius: 0.5em;
+  background-color: #2F3136;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+}
 a {
   color: #F8C596;
   text-decoration: underline dotted;
