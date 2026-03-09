@@ -1,55 +1,26 @@
-/* contact.js */
+/* mail.js */
 
-function generateMailAddress(showIcon) {
-  const part1 = "jorid";
-  const part2 = "king";
-  const part3 = "poo.steed";
-  const firstName = part1.substring(0, 3) + part1.charAt(4) + part1.charAt(3);
-  const lastName = part2.charAt(0) + "l" + part2.substring(1);
-  const domain = part3.substring(0, 2) + part3.substring(4, 7) + part3.substring(2, 4) + part3.charAt(8) + part3.charAt(7);
-  const result = firstName + lastName + "@" + domain;
+function assembleMailAddress() {
+    const part1 = "jorid";
+    const part2 = "king";
+    const part3 = "poo.steed";
 
-  return mailToLink(result, showIcon);
+    const firstName = part1.substring(0, 3) + part1.charAt(4) + part1.charAt(3);
+    const lastName = part2.charAt(0) + "l" + part2.substring(1);
+    const domain = part3.substring(0, 2) + part3.substring(4, 7) + part3.substring(2, 4) + part3.charAt(8) + part3.charAt(7);
+
+    return firstName + lastName + "@" + domain;
 }
 
 function injectMailAddress() {
-  const elements = document.getElementsByClassName("mail");
-  for (const element of elements) {
-    const showIconString = element.getAttribute("data-show-icon");
-    element.innerHTML = generateMailAddress(showIconString === "true");
-  }
-}
-
-function generateMobileNumber() {
-  const block3 = "";
-  const block2 = "";
-  const block1 = "";
-  return reverseString(block1) + " " + reverseString(block2) + " " + reverseString(block3);
-}
-
-function injectMobileNumber() {
-  const mobileNumber = generateMobileNumber();
-  const elements = document.getElementsByClassName("mobile");
-  for (const element of elements) {
-    element.innerHTML = mobileNumber;
-  }
+    const elements = document.getElementsByClassName("mail-link");
+    for (const element of elements) {
+        const mailAddress = assembleMailAddress();
+        element.innerHTML = mailAddress;
+        element.href = "mailto:" + mailAddress;
+    }
 }
 
 addEventListener("DOMContentLoaded", (e) => {
-  injectMailAddress();
-  injectMobileNumber();
+    injectMailAddress();
 });
-
-/* utils.js */
-
-function mailToLink(str, showIcon) {
-  let classString = "mail-link";
-  if (!showIcon) {
-    classString += " no-icon";
-  }
-  return `<a class=\"${classString}\" href=\"mailto:${str}\">${str}</a>`;
-}
-
-function reverseString(str) {
-  return str.split("").reverse().join("");
-}

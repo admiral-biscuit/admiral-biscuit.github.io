@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
- <!--This site was built by a static-site generator that I wrote. The content of this file is generated.-->
  <head>
   <title>JKL | Jordi Kling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -23,80 +22,70 @@
    </nav>
   </aside>
   <main>
-   <header>
-    Jordi Kling
-   </header>
-   <div style="margin-bottom: 1em;"></div>
-   <p><b>Hello.</b> I am Jordi, a harmless mathematician.</p>
-   <div class="columns">
-    <img class="round portrait" src="/resources/profile-picture.jpg" alt="profile picture">
+   <h1>Jordi Kling</h1>
+   <p>Hi, I'm Jordi, a <span class="comment">(mostly)</span> harmless mathematician.</p>
+   <section class="columns">
+    <img src="/static/images/profile-picture-jordi.jpg" alt="profile picture of Jordi Kling" class="image-round image-portrait">
     <address>
      <section>
-      <header>
-       Contact
-      </header>
+      <header>Contact</header>
       <table>
        <tbody>
         <tr>
-         <td><span class="material-icons icon">mail</span></td>
-         <td><span class="mail" data-show-icon="false"><em>Please enable JavaScript.</em></span></td>
+         <td><span class="material-icons image-icon">mail</span></td>
+         <td><a class="mail-link"><em>Please activate JavaScript.</em></a></td>
         </tr>
         <tr>
-         <td><img class="icon" src="/resources/icons/discord.svg" alt="discord icon"></td>
-         <td><span class="discord">admiralbiscuit</span></td>
+         <td><img alt="Discord logo" src="/static/images/icons/discord.svg" class="image-icon"></td>
+         <td>admiralbiscuit</td>
         </tr>
        </tbody>
       </table>
      </section>
      <section>
-      <header>
-       Profiles
-      </header>
+      <header>Profiles</header>
       <table>
        <tbody>
         <tr>
-         <td><img class="icon" src="/resources/icons/github.svg" alt="GitHub icon"></td>
-         <td><a href="https://github.com/admiral-biscuit" class="">admiral-biscuit</a></td>
+         <td><img alt="GitHub logo" src="/static/images/icons/github.svg" class="image-icon"></td>
+         <td><a href="https://github.com/admiral-biscuit" class="external-link">admiral-biscuit</a></td>
         </tr>
        </tbody>
       </table>
-     </section></address>
-   </div>
+     </section>
+    </address>
+   </section>
    <section>
-    <header>
-     Links
-    </header>
-    <nav class="big-links">
-     <ul>
-      <li class="big-link" onclick="location.href=&quot;/resume&quot;"><img alt="Jordi Kling" src="/resources/link-icons/jordi.jpg" class="round">
-       <div>
-        <header>
-         Résumé
-        </header>
-        <p>View my résumé here.</p>
-       </div></li>
-      <li class="big-link" onclick="location.href=&quot;/maths&quot;"><img alt="blackboard with maths" src="/resources/link-icons/maths-teaching.png" class="round">
-       <div>
-        <header>
-         Maths Stuff
-        </header>
-        <p>I like maths. <span class="comment">(Mostly teaching.)</span></p>
-       </div></li>
-      <li class="big-link" onclick="location.href=&quot;/dev&quot;"><img alt="Kotlin logo" src="/resources/link-icons/logo-kotlin.svg" class="round">
-       <div>
-        <header>
-         Software Development
-        </header>
-        <p>Learn more about my work as a software developer.</p>
-       </div></li>
-      <li class="big-link" onclick="location.href=&quot;/biscuit&quot;"><img alt="Biscuit (golden retriever)" src="/resources/link-icons/biscuit.jpg" class="round">
-       <div>
-        <header>
-         Biscuit
-        </header>
-        <p>Learn more about my doggo Biscuit.</p>
-       </div></li>
-     </ul>
+    <h2>Links</h2>
+    <nav class="links-with-item-and-description">
+     <div onclick="location.href='/resume/'">
+      <img alt="Jordi Kling" class="image-round" src="/static/images/link-icons/jordi.jpg">
+      <div>
+       <p><strong>Résumé</strong></p>
+       <p>View my résumé here.</p>
+      </div>
+     </div>
+     <div onclick="location.href='/maths/'">
+      <img alt="blackboard with maths" class="image-round" src="/static/images/link-icons/maths-teaching.png">
+      <div>
+       <p><strong>Maths Stuff</strong></p>
+       <p>I like maths. <span class="comment">(Mostly teaching.)</span></p>
+      </div>
+     </div>
+     <div onclick="location.href='/dev/'">
+      <img alt="Kotlin logo" class="image-round" src="/static/images/link-icons/logo-kotlin.svg">
+      <div>
+       <p><strong>Software Development</strong></p>
+       <p>Learn more about my work as a software developer.</p>
+      </div>
+     </div>
+     <div onclick="location.href='/biscuit/'">
+      <img alt="Biscuit (golden retriever)" class="image-round" src="/static/images/link-icons/biscuit.jpg">
+      <div>
+       <p><strong>Biscuit</strong></p>
+       <p>Learn more about my doggo Biscuit.</p>
+      </div>
+     </div>
     </nav>
    </section>
    <footer>
