@@ -398,7 +398,7 @@ address {
     }
   }
 }
-.two-column-table {
+.table-info {
   td {
     padding: 0.25em;
     &:first-child {
